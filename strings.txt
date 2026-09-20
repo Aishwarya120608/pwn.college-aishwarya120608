@@ -1,0 +1,18 @@
+strings
+theory:
+It is immutable 
+we can do slicing of a string .. and it has index , there are several inbuilt functions to be used to find the uppercase , lowercase ,etc
+code:
+text = "X-DSPAM-Confidence: 0.8475"
+
+# Find the position of the colon
+colon_pos = text.find(':')
+
+# Slice the string from after the colon to the end, stripping any surrounding whitespace
+number_str = text[colon_pos + 1:].strip()
+
+# Convert to float and print
+value = float(number_str)
+print(value)
+concept
+indexing, slicing 

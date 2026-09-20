@@ -1,0 +1,43 @@
+Tuples
+They are simple and efficient list
+Theory:
+they are immutable and defined in () 
+support comparision from left to right so that sorting data by multiple criteria is made easier.
+code:
+# Prompt for file name (defaults to mbox-short.txt if input is empty)
+fname = input("Enter file name: ")
+if len(fname) < 1:
+    fname = "mbox-short.txt"
+
+try:
+    handle = open(fname)
+except FileNotFoundError:
+    print(f"Error: File '{fname}' not found.")
+    exit()
+
+counts = dict()
+
+# Step 1: Parse the file and extract the hour
+for line in handle:
+    line = line.rstrip()
+    if not line.startswith('From '):
+        continue
+    
+    words = line.split()
+    # The time is the 6th element (index 5), e.g., '09:14:16'
+    time = words[5]
+    
+    # Split the time string using a colon to get the hour
+    pieces = time.split(':')
+    hour = pieces[0]
+    
+    # Increment the count for this hour in the dictionary
+    counts[hour] = counts.get(hour, 0) + 1
+
+# Step 2: Sort by hour (keys) and print the results
+for hour, count in sorted(counts.items()):
+    print(hour, count)
+
+concept learnt:
+Understanding tuple immutability and memory efficiency compared to list
+sorting the dictionary items by keys or values using tuples.

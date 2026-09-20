@@ -1,0 +1,11 @@
+Variables, expressions and statements
+We learn how to make variables and store data in those variables.
+theory: We should solve some basic programs that would test our knowlege in python
+name = input("Enter your name")
+print("Hello",name)
+hrs = input("Enter Hours:")
+rate=input("enter rate")
+pay=float(hrs)*float(rate) 
+print("Pay:",pay)
+concept learnt:
+how to use the datatypes and variables and solve the simple payment questions

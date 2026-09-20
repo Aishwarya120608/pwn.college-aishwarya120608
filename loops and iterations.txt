@@ -1,0 +1,29 @@
+Loops and Iterations
+It is how python repeats satements using looping structures
+Theory:
+While loop executes the code repeatedly as long as the condition is true 
+for loop generates a range and the loops terminates when the range is done
+code:
+largest = None
+smallest = None
+
+while True:
+    num = input()
+    if num == "done":
+        break
+    try:
+        val = int(num)
+    except:
+        print("Invalid input")
+        continue
+
+    if largest is None or val > largest:
+        largest = val
+    if smallest is None or val < smallest:
+        smallest = val
+
+print("Maximum is", largest)
+print("Minimum is", smallest)
+concept learnt 
+Indefinite and finite loops 
+using break and continue statement

@@ -1,0 +1,53 @@
+lists
+It is the common data structure which can store more than 1 item in a variable
+Theory:
+it is mutable. 
+we use so many inbuilt functions to make the extraction of data easy
+Code:
+fname = input("Enter file name: ")
+fh = open(fname)
+
+word_list = list()
+
+for line in fh:
+    # Split the line into individual words
+    words = line.split()
+    
+    # Check each word and append if not already in the list
+    for word in words:
+        if word not in word_list:
+            word_list.append(word)
+
+# Sort the words in standard Python alphabetical order
+word_list.sort()
+
+# Print the sorted list
+print(word_list)
+
+fname = input("Enter file name: ")
+fh = open(fname)
+
+count = 0
+
+for line in fh:
+    # Remove trailing whitespace/newlines
+    line = line.rstrip()
+    
+    # Skip lines that do not start with 'From '
+    if not line.startswith("From "):
+        continue
+    
+    # Split the line into words
+    words = line.split()
+    
+    # Extract and print the email address (the 2nd word)
+    email = words[1]
+    print(email)
+    
+    # Increment the counter
+    count = count + 1
+
+print("There were", count, "lines in the file with From as the first word")
+
+concept learnt:
+Learnt about splitting , about inbuilt functions and their uses

@@ -1,0 +1,23 @@
+Regular Expressions
+It allows us to search for patterns in strings and extract data from strings using python
+theory:
+re.search() tests if pattern exists in a line, while re.findall() extracts all substring matches a pattern into a list
+Key regex wildcard characters include . ,* ( 0 or more times) , + (1 or more times) and \S(non-whitespace character).
+code:
+import re
+from urllib.request import urlopen
+
+# Read the file directly from the webpage link
+url = "http://py4e-data.dr-chuck.net/regex_sum_2466074.txt"
+data = urlopen(url).read().decode()
+
+# Find all integers in the text
+numbers = re.findall("[0-9]+", data)
+
+# Convert strings to integers and sum them up
+total_sum = sum([int(num) for num in numbers])
+
+print("Total Sum:", total_sum)
+Concept learnt:
+Pattern matching with regex
+List comprehension and type casting

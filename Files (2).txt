@@ -1,0 +1,32 @@
+Files
+how to read from a text file , to write and append in it 
+theory:
+files are used to read , write and append the content to a text file.. The files are opened using open() function and loops iterate line by line .
+code:
+fname = input("Enter file name: ")
+fh = open(fname)
+
+count = 0
+total = 0.0
+
+for line in fh:
+    if not line.startswith("X-DSPAM-Confidence:"):
+        continue
+    
+    # Extract the floating-point number from the line
+    at_pos = line.find(":")
+    value_str = line[at_pos + 1:].strip()
+    value = float(value_str)
+    
+    # Accumulate count and total without using sum() or a sum variable
+    count = count + 1
+    total = total + value
+
+# Compute average
+if count > 0:
+    average = total / count
+    print("Average spam confidence:", average)
+
+concept :
+How to read a file and find the average 
+cleaning text with .rstrip()
