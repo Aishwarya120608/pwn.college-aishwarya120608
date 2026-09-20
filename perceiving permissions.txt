@@ -1,0 +1,29 @@
+perceiving permissions 
+In this challenge, we add and remove permissions, 'chmod' can also be  used to simply set permissions altogether. It overwrites the old ones using '=' instead of '-'or'+'
+solve
+ - The challenge required modifying permissions for user (u), group (g), and world/others (o) across 8 random target rounds using exact assignment (=) and comma chaining in chmod.
+- In each round, the program specified the target permission string (e.g., r--r---w-). We analyzed each triad (u, g, o), constructed the corresponding chmod u=...,g=...,o=... /challenge/pwn 
+Finally, we modified /flag permissions using chmod u=r /flag and retrieved the flag with cat /flag.
+chgrp hacker /flag
+ cat /flag
+flag-pwn.college{45HShBzycF7JhQla4uwOQOzenD_.QXxcjM1wCM3AzNwIzW} 
+chmod o+r /flag
+ls -l /flag
+cat /flag
+flag-pwn.college{8W11uGvAGfU01hT-UR9wdd9dloe.QXzcjM1wCM3AzNwIzW}
+chmod u+x /challenge/run
+/challenge/run
+flag- pwn.college{UuP0KRYYjVBsZTKGyqf4maNtOiN.QXyEjN0wCM3AzNwIzW}
+chmod u=r /flag
+ cat /flag
+flag -pwn.college{MXgSIvFJQAcXYMHepb1DFcVbzXQ.QXzETO0wCM3AzNwIzW}
+chmod u+s /challenge/getroot
+ /challenge/getroot
+cat /flag
+flag - pwn.college{Echa6e6gaAmFZmDSByTnRyVp2MS.QXzEjN0wCM3AzNwIzW}
+concepts learnt 
+permission explicit setting (=Operator)
+Comma chaining in chmod
+linux file security and access rights
+references 
+perceiving permissions videos in pwn.college

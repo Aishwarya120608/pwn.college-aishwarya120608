@@ -1,0 +1,27 @@
+Digesting documentation 
+looking for help on how to use programs and reading command-line documentation to pass flags 
+solve:
+to learn how to inspect program documentation, help options, and mnual pages needed to reveal the flag
+execute the commands using program documentation to pass arguments required by the binary target
+ /challenge/challenge --giveflag
+/challenge/challenge --printfile /flag bash
+ pwn.college{YHiSk37HRA0TjHc-qmVLilAzp5C.QX1ITO0wCM3AzNwIzW}
+[6:11 pm, 07/09/2026] Aishwarya: /challenge/challenge --onetjt 890
+[6:11 pm, 07/09/2026] Aishwarya: man challenge
+[6:11 pm, 07/09/2026] Aishwarya: Correct usage! Your flag: pwn.college{onHeRV8TUPR9tjtNfgFVVnhHsGd.QX0EDO0wCM3AzNwIzW}
+[6:46 pm, 07/09/2026] Aishwarya: man challenge 
+hacker@man~searching-manuals:~$ q
+[6:47 pm, 07/09/2026] Aishwarya: /challenge/challenge --edn
+Initializing...
+Correct usage! Your flag: pwn.college{okr_6CQoQWZHGmFa3Ur_EFs3wjB.QX1EDO0wCM3AzNwIzW}
+[6:57 pm, 07/09/2026] Aishwarya: pwn.college{QB6P7arVVu2V_MNzPSXoTJtY_Bz.QX2EDO0wCM3AzNwIzW}
+/challenge/challenge --help
+Correct usage! Your flag: pwn.college{AXcB7W9pFQbG55GEm5uSk1a_D8D.QX3IDO0wCM3AzNwIzW}
+help challenge
+Correct! Here is your flag!
+pwn.college{4gd6yY0ByssiVHxK-q-NG9z3Inc.QX0ETO0wCM3AzNwIzW}
+concept learnt 
+passing command-line arguements/flags to execute binaries 
+reading documentation or help out[uts to understand expected programs
+references:
+pwn.college tutorials

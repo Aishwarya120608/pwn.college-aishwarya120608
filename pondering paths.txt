@@ -1,0 +1,15 @@
+# Pondering Paths - Writeup
+
+#In this challenge , /challenge/run will write a copy of the flag to any file you specify the argument . but it will follow certain conditions 
+1. your arguement must be an absolute path 
+2. the path must be inside your home 
+- cd /usr/share/build-essential then /challenge/run
+-  cd /home then /challenge/run
+-  cd /var/lib/apt/lists then /challenge/run
+-  cd /usr/include then /challenge/run
+-  cd /usr/share/doc then /challenge/run
+pwn.college{IjaPmCbtCwCKZIWLXmhbaVALym7.QXzMD0ewCM3AzNwIzW}- flag
+concepts learnt 
+1. bash automatically streatches to the absolute path of the users home directory 
+references:
+pondering paths module 

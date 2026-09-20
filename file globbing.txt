@@ -1,0 +1,25 @@
+file globbing 
+It is a shell mechanism that makes you match multiple filenames using wildcard characters (* ,? ,[]), enabling efficient batch file manipulation withput specifying full paths
+solve 
+It works by expanding pattern before passing the expanded list of matching files to the target
+using operators like * ,commands can operate on multiple tasks simultaneously 
+bashes and flags
+cd /ch
+pwn.college{UlC5mmq7VTnfSWI96s6dETtQCFX.QXxIDO0wCM3AzNwIzW}
+cd /?ha??enge
+pwn.college{MF1-T4CZdOeyun8a59aL3aQroUb.QXyIDO0wCM3AzNwIzW}
+cd /challenge/files
+pwn.college{AWHlhPBPJL99HXbr5m9WMHIwaLh.QXzIDO0wCM3AzNwIzW}
+/challenge/run /challenge/files/file_[bash]
+pwn.college{cBqgoeiNeZWOPKQwO-oTW7poSkO.QX0IDO0wCM3AzNwIzW}
+cd /challenge/files
+pwn.college{Um766Ok0tkudb87ACWmotnc_L2A.0lM3kjNxwCM3AzNwIzW}
+pwncollege-24462 
+Correct! Here is your flag:
+pwn.college{she_R66D0f8Y5z05RKCkQxQt4ca.0VN0EzNxwCM3AzNwIzW}
+/challenge/files/pwncollege-flag 
+pwn.college{0pduO-oK_wvZyMuftzUfcxR8Lai.0lN0EzNxwCM3AzNwIzW}
+concept 
+understanding wildcard operators , performing file path expansion for navigation and binary execution 
+ref:
+pwn.college tutorials

@@ -1,0 +1,16 @@
+comprehending commands..
+in this challenge , used cat to inspect clue files . inspected the paths to reveal the hidden flag
+created the requested target directory using mkdir 
+executed the /challenge/run to validate the structure and output of the flag
+cleared any pre existing file or broken link using rm 
+created a link named /home/hacker/not-the-flag that points directly to /flag using ln -s 
+bashes: ln -s /flag /home/hacker/not-the-flag
+/challenge/catflag
+mkdir /tmp/pwn
+touch /tmp/pwn/college
+/challenge/run and many more
+flag : pwn.college{0waui1017ADfMVBspqr-06EYcCj.QXyMDOwCM3AzNwIzW} 
+file system discovery
+directory and file creation
+symbolic links and path syntax precision are the concepts learnt
+references: pwn.college modules

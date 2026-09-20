@@ -1,0 +1,117 @@
+chaining commands 
+it allows running linux commands conditionally with single line , enabling cummulative execution and s]basic utomation beyond data piping 
+solve 
+commands can be chained sequentially using operators like ; or conditionally using && 
+execute the required sequence of commands lined by control operators to fulfill the challege instructions and show the flag 
+  /challenge/college
+ /challenge/get_code && /challenge/get_flag
+ /challenge/pwn;  /challenge/college
+/challenge/first-success && /challenge/second
+ /challenge/first-failure || /challenge/second
+ echo "/challenge/college" 
+pwn.college{0h5Ve7GyG_d8kyftDOZ44xL6jUf.QXxcDO0wCM3AzNwIzW}
+echo "/challenge/pwn" > x.sh
+ echo "/challenge/college" >> x.sh 
+ /challenge/solve 
+Correct! Here is your flag:
+pwn.college{spr1oBk6yPIi9EKChQQG2MTK_M7.QX4ETO0wCM3AzNwIzW}
+ echo "/challenge/solve" > x.sh 
+chmod +x x.sh
+Congratulations on your shell script execution! Your flag:
+pwn.college{Ulf0wJKGrxUQWMXj-Yw0Xz2JdML.QX0cjM1wCM3AzNwIzW}
+ /home/hacker/solve.sh
+/home/hacker/solve.sh
+ echo '#!/bin/bash' > /home/hacker/solve.sh
+echo "echo hack the planet" >> /home/hacker/solve.sh
+[11:40 pm, 11/09/2026] Aishwarya: echo '#!/bin/bash' > /home/hacker/solve.sh
+echo 'echo "$2 $1"' >> /home/hacker/solve.sh
+[11:44 pm, 11/09/2026] Aishwarya: echo '#!/bin/bash' > /home/hacker/solve.sh
+echo 'echo "$2 $1"' >> /home/hacker/solve.sh
+ chmod +x /home/hacker/solve.sh
+ /challenge/run
+Here's your flag:
+pwn.college{4ckqyvc8wtsO7EBU_1zXx2lQv0h.0VNzMDOxwCM3AzNwIzW}
+[11:46 pm, 11/09/2026] Aishwarya: chmod +x /home/hacker/solve.sh
+[11:47 pm, 11/09/2026] Aishwarya: echo '#!/bin/bash' > /home/hacker/solve.sh
+echo 'if [ "$1" = "pwn" ]; then echo "college"; fi' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-conditionals:~$ #!/bin/bash
+if [ "$1" = "pwn" ]; then echo "college"; fi
+hacker@chaining~scripting-with-conditionals:~$ chmod +x /home/hacker/solve.sh
+hacker@chaining~scripting-with-conditionals:~$ /challenge/run
+Correct! Your script properly handles all the conditions.
+Here's your flag:
+pwn.college{8ra0cz-9OanUUXu5u3fSYwsMU18.0lNzMDOxwCM3AzNwIzW}
+ echo '#!/bin/bash' > /home/hacker/solve.sh
+echo 'if [ "$1" = "pwn" ]; then echo "college"; else echo "nope"; fi' >> /home/hacker/solve.sh
+ #!/bin/bash
+if [ "$1" = "pwn" ]; then 
+  echo "college" 
+else 
+  echo "nope" 
+fi
+ chmod +x /home/hacker/solve.sh
+ echo '#!/bin/bash' > /home/hacker/solve.sh
+echo 'if [ "$1" = "pwn" ]; then' >> /home/hacker/solve.sh
+echo '  echo "college"' >> /home/hacker/solve.sh
+echo 'elif [ "$1" = "learn" ]; then' >> /home/hacker/solve.sh
+echo '  echo "linux"' >> /home/hacker/solve.sh
+echo 'else' >> /home/hacker/solve.sh
+echo '  echo "unknown"' >> /home/hacker/solve.sh
+echo 'fi' >> /home/hacker/solve.sh
+ cat /home/hacker/solve.sh
+ chmod +x /home/hacker/solve.sh
+ /challenge/run
+ cat << 'EOF' > /home/hacker/solve.sh
+#!/bin/bash
+if [ "$1" = "pwn" ]; then
+  echo "college"
+elif [ "$1" = "learn" ]; then
+  echo "linux"
+elif [ "$1" = "hack" ]; then
+  echo "the planet"
+else
+  echo "unknown"
+fi
+EOF
+chmod +x /home/hacker/solve.sh
+ cat << 'EOF' > /home/hacker/solve.sh
+#!/bin/bash
+if [ "$1" = "pwn" ]; then
+  echo "college"
+elif [ "$1" = "learn" ]; then
+elif [ "$1" = "learn" ]; then
+  echo "linux"
+elif [ "$1" = "hack" ]; then
+  echo "the planet"
+else
+  echo "unknown"
+fi
+EOF
+hacker@chaining~scripting-with-multiple-conditions:~$ chmod +x /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ /challenge/run
+Correct! Your script properly handles all the conditions with elif.
+Here's your flag:
+pwn.college{gjaGCAfrSaVbOy6jRIVXZzwOjkO.0FOzMDOxwCM3AzNwIzW}
+ cat /challenge/run
+#!/usr/bin/exec-suid -- /bin/bash -p
+
+read GUESS
+if [ "$GUESS" == "hack the PLANET" ]
+then
+        echo "CORRECT! Your flag:"
+        cat /flag
+else
+        echo "Read the /challenge/run file to figure out the correct password!"
+fi
+hacker@chaining~reading-shell-scripts:~$ /challenge/run hack the PLANET
+  
+Read the /challenge/run file to figure out the correct password!
+hacker@chaining~reading-shell-scripts:~$ /challenge/run
+hack the PLANET
+CORRECT! Your flag:
+pwn.college{Yn9biWkb__0LpYkSrvUrUUL2gHL.0lMwgDOxwCM3AzNwIzW}
+concept learnt 
+using semicolons to run sequential , independant commands in a single command line entry
+building strong foundational command sequences in chains
+references: 
+pwn.college tutorials , google chrome

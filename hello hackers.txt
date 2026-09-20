@@ -1,0 +1,9 @@
+#hello hackers
+run the challenge executable to print the flag and learn the basics 
+## solve: 
+executed the binary provided in the challenge directory 
+/challenge/solve
+the flag is pwn.college{MnPJaJIB732Bk-VoDnMQ1q1BYFc.0lNzEzNxwCM3AzNwIzW}
+basic linux terminal navigation and command executed 
+understanding pwn.college and flag format 
+references: pwn.college dojo instructions 

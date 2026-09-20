@@ -1,0 +1,31 @@
+practicing piping 
+Understanding standard input and output redirection allows us to check or divert data flow and command execution 
+solve
+the goal of this introductory module is to understand how input and output work in linux. 
+ cat myflag
+
+[FLAG] Here is your flag:
+[FLAG] pwn.college{MeEQb0146axJX_COt5KXzHilYBS.QX1YTN0wCM3AzNwIzW}
+/challenge/run > my flag
+ cat myflag
+
+[FLAG] Here is your flag:
+[FLAG] pwn.college{ku-RRyuEWmY50gbMQp4iJmylbtZ.QX3YTN0wCM3AzNwIzW}
+echo COLLEGE > PWN
+ /challenege/run < PWN
+ /challenge/run > /tmp/data.txt
+ grep "pwn.college" /tmp/data.txt
+pwn.college{gzOx-vjLfOMjIDHHF7rU0oGB6Qg.QX4EDO0wCM3AzNwIzW}
+ /challenge/run | grep pwn.college
+ pwn.college{gGaqW1aaqaFX1l2wFso3zonzi0F.QX5EDO0wCM3AzNwIzW}
+ /challenge/run 2>&1 | grep pwn.college
+pwn.college{c6CSXHAYt2Kmn2xFeDRegJbgD3m.QX1ATO0wCM3AzNwIzW}
+ /challenge/run | grep -v DECOY 
+pwn.college{sKov_vuMgnEXTC7TbDyrq7fFHMh.0FOxEzNxwCM3AzNwIzW}
+/challenge/run | sed 's/FAKEFLAG//g'
+pwn.college{gAyuD4LO-KQzkUQ7smyq1wEg6sy.01NxQTMywCM3AzNwIzW}
+concept learnt 
+understanding Linux standard i/o streams 
+how linux programs output data nd how redirection operations example >,<,>> and piping | work to change the program input and output
+references :
+pwn.college tutorials 
